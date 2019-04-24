@@ -1,0 +1,11 @@
+os: linux
+group: stable
+dist: trusty
+sudo: required
+language: generic
+
+before_script:
+  - npm install -g dockerfilelint
+
+script:
+  - dockerfilelint */Dockerfile
